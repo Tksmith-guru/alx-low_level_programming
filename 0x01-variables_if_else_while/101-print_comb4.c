@@ -1,7 +1,8 @@
 #include <stdio.h>
-
-/*
+/**
  * main - Entry point
+ *
+ * Description: 'Program that prints the possible combination of three digits'
  *
  * Return: Always 0 (Success)
  */
