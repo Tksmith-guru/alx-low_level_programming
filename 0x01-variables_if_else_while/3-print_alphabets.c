@@ -12,8 +12,8 @@ int main(void)
 
 	for (alphabets = 'a'; alphabets <= 'z'; alphabets++)
 		putchar(alphabets);
-	for (CAPS = 'A' CAPS <= 'z'; CAPS++)
-		Putchar(CAPS);
-	Putchar('\n');
+	for (CAPS = 'A'; CAPS <= 'z'; CAPS++)
+		putchar(CAPS);
+	putchar('\n');
 	return (0);
 }
