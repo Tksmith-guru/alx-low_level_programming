@@ -5,7 +5,7 @@
  * Return: always 0
  */
 int main(void);
-char _putchar;
+char newcharacters;
 
 {
 	_putchar('_');
