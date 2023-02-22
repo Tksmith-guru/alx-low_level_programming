@@ -5,12 +5,12 @@
  *
  * Return: Always 0 (Success);
  */
-void print_alphabet_x10(void)
+void print_alphabet(void)
 {
 	char i;
 	char j;
 
-	for (j = 0; i <= 'z'; i++)
+	for (j = 0; j <= 'z'; j++)
 	{
 		for (i = 'a'; i <= 'z'; i++)
 		{
