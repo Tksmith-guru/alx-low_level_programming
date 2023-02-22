@@ -2,6 +2,9 @@
 
 /**
  * print_alphabet_x10(void) - Make alphabet x10 times
+ *
+ * Description: Program that prints alphabets in lowercase\n
+ *
  * return: void
  */
 
