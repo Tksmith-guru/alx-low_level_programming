@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
- * main - check the code
- * 
- * Description: The code prints all lowercase and uppercase
+ * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Description: check the code
+ *
+ * Return:Always 0 (Success);
  */
 
 void print_alphabet(void)
@@ -16,7 +16,7 @@ void print_alphabet(void)
 
 
 	for (i = 'a'; i <= 'z'; i++)
-	
+
 	{
 		_putchar(i);
 	}
