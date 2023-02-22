@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * test_islower - Entry point
+ * _islower - Entry point
  *
- * @c: character to cmopare
+ * @c: character to compare
  *
  * Return: 1 if true, 0 if false
  */
 
-int test_islower(int c)
+int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{
