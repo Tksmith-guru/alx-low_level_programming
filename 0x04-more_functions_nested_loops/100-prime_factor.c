@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
- * main Entry point
+ * main - Entry point
+ *
+ * Description: Program that finds the largest prime number
  *
  * Return: Always 0.
  */
