@@ -1,21 +1,24 @@
 #include "main.h"
-
 /**
- * print_square - prints hashes squares.
- * @size: size of the square
- * Return: no return.
+ * more_numbers - prints the numbers
+ *
  */
-void print_square(int size)
-{
-	int i, j;
 
-	for (i = 0; i < size; i++) {
-		for (j = 0; j < size; j++)
-		{
-			_putchar(35);
-		}
-		if (i != size - 1)
-			_putchar('\n');
-	}
-	_putchar('\n');
+void more_numbers(void)
+{
+int i;
+int h;
+
+for (h = 0; h <= 9; h++)
+{
+for (i = 0; i <= 14; i++)
+{
+if (i > 9)
+{
+_putchar(i / 10 + '0');
+}
+_putchar(i % 10 + '0');
+}
+_putchar('\n');
+}
 }
