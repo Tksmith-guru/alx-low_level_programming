@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - rests the value of a given integer to 98
- * @n; parameter
+ * @n: parameter to be used in the program
  * Return: nothing
  */
 
