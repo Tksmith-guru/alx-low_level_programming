@@ -1,4 +1,10 @@
 #include <stdio.h>
+/**
+ * main - program that print a[2] = 98
+ * followed by a new line
+ *
+ * Return: Nothing
+ */
 
 int main(void)
 {
