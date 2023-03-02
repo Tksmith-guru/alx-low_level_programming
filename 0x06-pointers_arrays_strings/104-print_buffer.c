@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * print_buffer - prints a buffer
- * @b: buffer
- * @size: size of buffer
+ * print_buffer - prints a buffer 10 bytes per line
+ * @b: buffer address
+ * @size: Number of characters to be printed
  * Return: no return
  */
 void print_buffer(char *b, int size)
