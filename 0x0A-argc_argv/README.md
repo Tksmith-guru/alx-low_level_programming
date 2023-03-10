@@ -1,1 +1,1 @@
-This is for all argc and argv programs
+This is for all argc and argv c-programs
