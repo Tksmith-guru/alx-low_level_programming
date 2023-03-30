@@ -7,9 +7,9 @@ fmt:		db "%s", 10, 0
 	global main
 main:
 	mov esi, msg
-	nov edi, fmt
-	nov eax, 0
+	mov edi, fmt
+	mov eax, 0
 	call printf
 
-	nov eax, 0
+	mov eax, 0
 ret
