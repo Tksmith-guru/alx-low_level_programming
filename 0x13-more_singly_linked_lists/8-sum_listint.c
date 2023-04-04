@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stdlib.h>
 
 /**
  * sum_listint - It returns the sum of all the data (n) of a listint_t linked list
