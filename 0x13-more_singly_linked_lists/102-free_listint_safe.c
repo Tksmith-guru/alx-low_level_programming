@@ -3,14 +3,14 @@
 #include <stdio.h>
 
 /**
- * _r - reallocates memory for an array of pointers
- * @list: old list needed to be appended
- * @size: size of the new list
- * @new: new node to be added to the new list
+ * _ra - reallocates memory for an array of pointers
+ * @size: size of the new listint_t list
+ * @list: double pointer to the listint_t list
+ * @new: new node to be added to the new listint_t linked list
  *
  * Return: pointer to the new list
  */
-listint_t **_ra(listint_t, size_t size, listint_t *new)
+listint_t **_ra(listint_t **list, size_t size, listint_t *new)
 {
 	listint_t **newlist;
 	size_t i;
@@ -30,9 +30,9 @@ listint_t **_ra(listint_t, size_t size, listint_t *new)
 
 /**
  * free_listint_safe - It frees a listint_t list
- * @h: double pointer to the listint_t list
+ * @head: double pointer to start of the list
  *
- * Return: the size of the list that was free'd
+ * Return: the size of the node in the list
  */
 size_t free_listint_safe(listint_t **head)
 {
