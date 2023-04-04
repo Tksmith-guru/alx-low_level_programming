@@ -3,18 +3,18 @@
 
 /**
  * insert_nodeint_at_index - It inserts a new node at a given position
- * @head: double pointer to the listint_t linked list
+ * @head: double pointer to the first node of the listint_t linked list
  * @idx: index of the list for the new node, starting from 0
- * @n: input integer to be added to the listint_t list
+ * @n: value for the new node
  *
  * Return: the address of the new node
  * If it fails, return NULL
  * If it is not possible to add new node at index idx, return NULL
  */
-listint_t *insert_nodeint_at_index(listint_t *head, unsigned int idx, int n)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	unsigned int i;
-	listint *current, *new;
+	listint_t *current, *new;
 
 	if (head == NULL)
 		return (NULL);
