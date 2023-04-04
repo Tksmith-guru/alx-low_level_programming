@@ -6,10 +6,10 @@
 
 /**
  * struct listint_s - Singly linked list
- * @n: input integer
+ * @n: integer
  * @next: points to the next node
  *
- * Description: Singly linked lists node structures
+ * Description: Singly linked list node structure
  * for the Holberton project
  */
 typedef struct listint_s
