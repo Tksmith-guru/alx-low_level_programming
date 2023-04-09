@@ -17,7 +17,7 @@ int _strlen(char *str)
 }
 
 /**
- * appened_text_to_file - It appends text at the end of a file
+ * append_text_to_file - It appends text at the end of a file
  * @filename: It is the name of the file
  * @text_content: It is the NULL terminated string to the file
  *
