@@ -21,19 +21,19 @@ int main(int argc, char *argv[])
 
 	if (arg != 3)
 	{
-		dprintf(STDERR_FILENO, "%s", "usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "%s", "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	src = open(argv[1], O_RDONLY);
-	check_IO_stat(src, -1, argv[1], '0');
+	check_IO_stat(src, -1, argv[1], 'O');
 	dest = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, mode);
 	check_IO_stat(dest, -1, argv[2], 'W');
 	while (n_read == 1024)
 	{
 		n_read = read(src, buffer, sizeof(buffer));
 		if (n_read == -1)
-			check_IO_stat(-1, -1, argv[1], '0');
-		wrote = wriet(dest, buffer, n_read);
+			check_IO_stat(-1, -1, argv[1], 'O');
+		wrote = write(dest, buffer, n_read);
 		if (wrote == -1)
 			check_IO_stat(-1, -1, argv[2], 'W');
 	}
@@ -60,7 +60,7 @@ void check_IO_stat(int stat, int fd, char *filename, char mode);
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
-	else if (mode == 'w' && stat == -1)
+	else if (mode == 'o' && stat == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 		exit(98);
