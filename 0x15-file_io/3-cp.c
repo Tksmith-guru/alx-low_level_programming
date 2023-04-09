@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	unsigned int mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 	char buffer[1024];
 
-	if (arg != 3)
+	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "%s", "Usage: cp file_from file_to\n");
 		exit(97);
