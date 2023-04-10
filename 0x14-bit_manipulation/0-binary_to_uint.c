@@ -5,9 +5,9 @@
 
 /**
  * binary_to_uint - Its converts a bianry number to an unsigned int
- * @b: pointer to the string of 0 and 1 chars
+ * @b: pointer to the array of characters in the binary to be converted
  *
- * Return: the converting number, or 0 if
+ * Return: the converted  number, or 0 if
  * there is more then one chars in the string
  * that is not 0 or 1
  */
