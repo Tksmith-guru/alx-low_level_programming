@@ -36,3 +36,6 @@ unsigned int binary_uint(const char *b)
 		base *= 2;
 		i--;
 	}
+
+	return (res);
+}
