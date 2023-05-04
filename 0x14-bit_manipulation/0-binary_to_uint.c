@@ -4,14 +4,13 @@
 #include <math.h>
 
 /**
- * binary_uint - It converts a binary to an unsigned int
+ * binary_to_uint - It converts binary to an unsigned int
  * @b: pointer to a string of 0 and 1 chars
  *
- * Return: the converted number or 0
- * If there is more char in b
+ * Return: res
  */
 
-unsigned int binary_uint(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	int i, base = 1, len = 0;
 	unsigned int res = 0;
